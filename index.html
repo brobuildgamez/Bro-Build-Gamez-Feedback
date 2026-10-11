@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b10">
+  <meta name="description" content="Share feedback with Bro Build Gamez. Your voice helps us grow.">
+  <title>Bro Build Gamez — Feedback</title>
+  <link rel="icon" href="assets/logo-emblem.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bro Build Gamez home">
+      <img src="assets/logo-emblem.png" alt="" class="brand-mark">
+      <span>Bro Build Game<span class="lime">z</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a class="active" href="#feedback" aria-current="page">Feedback</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-tagline"><span class="leaf" aria-hidden="true">◆</span><span>Test, Design, and Publish<br>for Free</span></div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-brand">
+        <img src="assets/forest-emblem.png" alt="Bro Build Gamez green gaming emblem" class="hero-logo">
+        <h1 id="hero-title">Bro Build Game<span class="lime">z</span></h1>
+        <div class="bbg"><span></span> B B G <span></span></div>
+        <p class="slogan">Your voice helps us grow.</p>
+      </div>
+      <div class="hero-copy">
+        <h2><span class="outline-icon" aria-hidden="true">☏</span> Share Your <span class="lime">Feedback</span></h2>
+        <p>We value your thoughts, ideas, and suggestions. Help us make our games and projects even better by sharing your feedback.</p>
+        <div class="benefits" aria-label="Why your feedback matters">
+          <div><span aria-hidden="true">♢</span><p>Your feedback<br>matters</p></div>
+          <div><span aria-hidden="true">🎮</span><p>Better games,<br>together</p></div>
+          <div><span aria-hidden="true">◆</span><p>Small ideas<br>create big changes</p></div>
+          <div><span aria-hidden="true">♥</span><p>Thanks for<br>being awesome!</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback" class="feedback-panel" aria-labelledby="form-title">
+      <aside class="panel-aside" id="about">
+        <div class="bubble-icon" aria-hidden="true">•••</div>
+        <h2>Your Voice<br><span class="lime">Helps Us Grow.</span></h2>
+        <div class="short-rule"></div>
+        <p>Whether it's a bug, a suggestion, a feature request, or just general feedback — we're all ears!</p>
+        <img src="assets/forest-emblem.png" alt="Bro Build Gamez emblem" class="aside-emblem">
+        <p class="aside-brand">Bro Build Game<span class="lime">z</span></p>
+        <p class="aside-motto">PLAY <span>•</span> CREATE <span>•</span> GROW</p>
+      </aside>
+
+      <div class="form-area">
+        <h2 id="form-title"><span class="outline-icon" aria-hidden="true">☏</span> Send Us Your Feedback</h2>
+        <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+        <form id="feedback-form">
+          <label for="name">Your Name <span class="required">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" maxlength="100" required>
+
+          <label for="email">Your Email <span class="required">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
+
+          <fieldset class="category-fieldset">
+            <legend>What kind of feedback do you have? <span class="required">*</span></legend>
+            <div class="category-grid">
+              <label class="category-option"><input type="radio" name="category" value="Bug Report" required><span class="radio-mark"></span><span aria-hidden="true">⚒</span> Bug Report</label>
+              <label class="category-option"><input type="radio" name="category" value="Suggestion" required><span class="radio-mark"></span><span aria-hidden="true">♧</span> Suggestion</label>
+              <label class="category-option"><input type="radio" name="category" value="Feature Request" required><span class="radio-mark"></span><span aria-hidden="true">✧</span> Feature Request</label>
+              <label class="category-option"><input type="radio" name="category" value="General Feedback" required><span class="radio-mark"></span><span aria-hidden="true">☏</span> General Feedback</label>
+            </div>
+          </fieldset>
+
+          <div class="message-label-row"><label for="message">Your Feedback <span class="required">*</span></label><span id="char-count">0/1000</span></div>
+          <textarea id="message" name="message" rows="5" maxlength="1000" placeholder="Tell us what you think..." required></textarea>
+
+          <!-- Honeypot: leave empty; it is hidden from real visitors. -->
+          <div class="hp-field" aria-hidden="true"><label for="company">Leave this field empty</label><input id="company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+          <button id="submit-button" type="submit"><span aria-hidden="true">➤</span> Send Feedback</button>
+          <p class="privacy-note"><span aria-hidden="true">♢</span> Your information is used to respond to your feedback.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand footer-brand" href="#home"><img src="assets/logo-emblem.png" alt="" class="brand-mark"><span>Bro Build Game<span class="lime">z</span></span></a>
+      <nav aria-label="Footer navigation"><a href="#home">Home</a><span>|</span><a href="#feedback">Feedback</a><span>|</span><a href="#about">About</a></nav>
+      <a class="contact-link" href="mailto:brobuildgames@gmail.com"><span aria-hidden="true">✉</span> Contact: <strong>brobuildgames@gmail.com</strong></a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Bro Build Gamez. All rights reserved.</span><span class="footer-motto"><span class="leaf" aria-hidden="true">◆</span> Test, Design, and Publish for Free</span></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="email-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
